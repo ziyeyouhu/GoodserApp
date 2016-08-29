@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <!--该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false-->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color"/>
+        <!--缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3-->
+        <attr name="pstsScaleZoomMax" format="float"/>
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressPieView">
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="ppvProgress" format="integer"/>
+        <attr name="ppvMax" format="integer"/>
+        <attr name="ppvStartAngle" format="integer"/>
+        <attr name="ppvInverted" format="boolean"/>
+        <attr name="ppvCounterclockwise" format="boolean"/>
+        <attr name="ppvStrokeWidth" format="dimension"/>
+        <attr name="ppvBackgroundColor" format="reference|color"/>
+        <attr name="ppvProgressColor" format="reference|color"/>
+        <attr name="ppvStrokeColor" format="reference|color"/>
+        <attr name="ppvShowStroke" format="boolean"/>
+        <attr name="ppvShowText" format="boolean"/>
+        <attr name="ppvTypeface" format="string"/>
+        <attr name="ppvImage" format="reference"/>
+        <attr name="ppvProgressFillType" format="enum">
+            <enum name="radial" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="BBox">
+        <attr name="check_style">
+            <enum name="fork" value="0" />
+            <enum name="hook" value="1" />
+        </attr>
+        <attr name="color_before" format="color" />
+        <attr name="color_after" format="color" />
+        <attr name="check_text" format="string" />
+        <attr name="show_border" format="boolean"/>
+        <attr name="is_circle_border" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CrossView">
+        <attr name="lineColor" format="color"/>
+    </declare-styleable>
+
+</resources>

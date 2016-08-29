@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mLL_findgoods_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@mipmap/ic_def_lunbo"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/TextView14"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
+            android:gravity="center_vertical"
+            android:hint="我的收藏"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white94"/>
+
+        <TextView
+            style="@style/TextView14"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
+            android:gravity="center_vertical"
+            android:hint="我的收藏"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white94"/>
+
+        <TextView
+            style="@style/TextView14"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
+            android:gravity="center_vertical"
+            android:hint="我的收藏"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white94"/>
+
+        <TextView
+            style="@style/TextView14"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
+            android:gravity="center_vertical"
+            android:hint="我的收藏"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white94"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

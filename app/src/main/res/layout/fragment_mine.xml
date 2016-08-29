@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="我的"/>
+
+    <TextView
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+    <ImageView
+        android:background="@mipmap/aa"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+
+    <co.sspp.goodserapp.weight.PagerSlidingTabStrip
+
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp"
+        app:pstsDividerColor="#888899ab"
+        app:pstsDividerPaddingTopBottom="10dp"
+        app:pstsIndicatorColor="@color/dark_blue"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsScaleZoomMax="0.2"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextSelectedColor="@color/dark_blue"
+        app:pstsUnderlineColor="@color/dark_blue"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"/>
+
+
+</LinearLayout>

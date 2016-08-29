@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white94"/>
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/g_main_tab_bottom"
+            android:drawableTop="@drawable/g_icon_index"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb_findship"
+            style="@style/g_main_tab_bottom"
+            android:drawableTop="@drawable/g_icon_findship"
+            android:text="找船"/>
+
+        <!--<ImageView
+            android:paddingBottom="2dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/g_push_goods"
+            android:id="@+id/giv_push_goods"
+            android:text="一键发盘"/>-->
+
+        <co.sspp.goodserapp.weight.CrossView
+            android:id="@+id/crossview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_orage_aval"
+            android:padding="10dp"
+            app:lineColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/rb_mygoods"
+            style="@style/g_main_tab_bottom"
+            android:drawableTop="@drawable/g_icon_mygoods"
+            android:text="我的货盘"/>
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/g_main_tab_bottom"
+            android:drawableTop="@drawable/g_icon_mine"
+            android:text="个人中心"/>
+
+
+    </RadioGroup>
+</LinearLayout>

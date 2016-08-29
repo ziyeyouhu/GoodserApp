@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/shape_bg_white_radius"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+          />
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:textColor="#313131"
+                android:id="@+id/name"
+                style="@style/TextView14"
+                android:text="神龙洲2222"/>
+
+            <TextView
+
+                style="@style/TextView12"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/name"
+                android:layout_toRightOf="@+id/name"
+                android:text="(2400吨)"
+                android:textColor="#c0c0c0"/>
+
+            <TextView
+                android:textColor="#313131"
+                style="@style/TextView14"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:text="12/24日在永州国际码头空船"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            style="@style/TextView12"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="7min前"
+            android:textColor="#c0c0c0"/>
+
+    </LinearLayout>
+</LinearLayout>

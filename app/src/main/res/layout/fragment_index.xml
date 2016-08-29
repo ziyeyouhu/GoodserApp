@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/dark_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="超级船东"
+            android:textColor="@color/white"
+            android:textSize="32px"/>
+
+
+    </RelativeLayout>
+
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_main"
+        style="@style/BannerDefaultStyle"
+        android:layout_height="280px"
+        app:banner_indicatorGravity="bottom|center_horizontal"
+        app:banner_transitionEffect="alpha"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginStart="30px"
+                android:background="@mipmap/ic_index_findship"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="50px"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="3919"
+                android:textColor="@color/bright_blue"
+                android:textSize="48px"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="12px"
+                android:text="找船/条"
+                android:textColor="@color/black60"
+                android:textSize="24px"/>
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/white94"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginStart="30px"
+                android:background="@mipmap/ic_index_findgoods"/>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="50px"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="878"
+                android:textColor="@color/bright_blue"
+                android:textSize="48px"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22"
+                android:layout_below="@+id/textView22"
+                android:layout_marginTop="12px"
+                android:text="找货/条"
+                android:textColor="@color/black60"
+                android:textSize="24px"/>
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="@color/white94"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:layout_marginLeft="30px"
+        android:gravity="center_vertical"
+        android:text="运费宝"
+        android:textColor="@color/black85"
+        android:textSize="28px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/white94"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36px"
+            android:text="24"
+            android:textColor="@color/dark_orange"
+            android:textSize="48px"/>
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54px"
+            android:layout_toEndOf="@+id/textView33"
+            android:layout_toRightOf="@+id/textView33"
+            android:text="小时放款"
+            android:textColor="@color/black70"
+            android:textSize="24px"/>
+
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView88"
+            android:layout_marginLeft="60px"
+            android:layout_toEndOf="@+id/textView88"
+            android:layout_toRightOf="@+id/textView88"
+            android:text="为您提供短期资金周转"
+            android:textColor="@color/black70"
+            android:textSize="24px"/>
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="28px"
+            android:text="我来给你垫运费"
+            android:textColor="@color/black60"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="88px"
+            android:layout_height="40px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_shape_index"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/dark_orange"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="88px"
+            android:layout_height="36px"
+            android:layout_alignBottom="@+id/textView55"
+            android:layout_alignLeft="@+id/textView66"
+            android:layout_alignStart="@+id/textView66"
+            android:background="@drawable/bg_shape_index1"
+            android:gravity="center"
+            android:text="手续简单"
+            android:textColor="@color/dark_orange"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="88px"
+            android:layout_height="36px"
+            android:layout_alignTop="@+id/textView99"
+            android:layout_marginLeft="10px"
+            android:layout_toEndOf="@+id/textView99"
+            android:layout_toRightOf="@+id/textView99"
+            android:background="@drawable/bg_shape_index1"
+            android:gravity="center"
+            android:text="成本低廉"
+            android:textColor="@color/dark_orange"
+            android:textSize="20px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="@color/white94"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:layout_marginLeft="30px"
+        android:gravity="center_vertical"
+        android:text="货物险"
+        android:textColor="@color/black85"
+        android:textSize="28px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/white94"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36px"
+            android:text="24"
+            android:textColor="@color/dark_orange"
+            android:textSize="48px"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54px"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="小时放款"
+            android:textColor="@color/black70"
+            android:textSize="24px"/>
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_marginLeft="60px"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_toRightOf="@+id/textView8"
+            android:text="为您提供短期资金周转"
+            android:textColor="@color/black70"
+            android:textSize="24px"/>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="28px"
+            android:text="我来给你垫运费"
+            android:textColor="@color/black60"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="88px"
+            android:layout_height="40px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_shape_index"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/dark_orange"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="88px"
+            android:layout_height="36px"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:background="@drawable/bg_shape_index1"
+            android:gravity="center"
+            android:text="手续简单"
+            android:textColor="@color/dark_orange"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="88px"
+            android:layout_height="36px"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_marginLeft="10px"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:background="@drawable/bg_shape_index1"
+            android:gravity="center"
+            android:text="成本低廉"
+            android:textColor="@color/dark_orange"
+            android:textSize="20px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="@color/white94"/>
+
+</LinearLayout>
