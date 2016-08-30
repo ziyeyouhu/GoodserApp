@@ -1,1 +1,1 @@
-include ':app', ':rvlibrary'
+include ':app'

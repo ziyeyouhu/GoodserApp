@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoodserApp.iml" filepath="$PROJECT_DIR$/GoodserApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rvlibrary/rvlibrary.iml" filepath="$PROJECT_DIR$/rvlibrary/rvlibrary.iml" />
     </modules>
   </component>
 </project>

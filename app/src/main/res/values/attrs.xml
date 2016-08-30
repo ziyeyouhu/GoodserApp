@@ -60,20 +60,45 @@
     </declare-styleable>
 
 
-    <declare-styleable name="BBox">
-        <attr name="check_style">
-            <enum name="fork" value="0" />
-            <enum name="hook" value="1" />
-        </attr>
-        <attr name="color_before" format="color" />
-        <attr name="color_after" format="color" />
-        <attr name="check_text" format="string" />
-        <attr name="show_border" format="boolean"/>
-        <attr name="is_circle_border" format="boolean"/>
-    </declare-styleable>
+
 
     <declare-styleable name="CrossView">
         <attr name="lineColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="crLayout">
+        <!-- 自定义加载更多 res layout id-->
+        <attr name="load_layout" format="reference" />
+        <!--加载更多显示的文字-->
+        <attr name="load_text" format="string" />
+        <!--加载更多的进度菊花-->
+        <attr name="load_indeterminate_drawable" format="reference" />
+        <!--加载更多完成显示的文字-->
+        <attr name="load_completed_text" format="string" />
+        <!--加载更多layout有动画显示效果-->
+        <attr name="load_animator" format="boolean"/>
+        <attr name="empty_text" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SkyIcon">
+        <attr name="isStatic" format="boolean" />
+        <attr name="strokeColor" format="color" />
+        <attr name="bgColor" format="color" />
+    </declare-styleable>
+
+
+    <!--xlayout-->
+    <declare-styleable name="MultiStateView">
+        <attr name="msv_loadingView" format="reference"/>
+        <attr name="msv_emptyView" format="reference"/>
+        <attr name="msv_errorView" format="reference"/>
+        <attr name="msv_viewState" format="enum">
+            <enum name="content" value="0"/>
+            <enum name="error" value="1"/>
+            <enum name="empty" value="2"/>
+            <enum name="loading" value="3"/>
+        </attr>
     </declare-styleable>
 
 </resources>

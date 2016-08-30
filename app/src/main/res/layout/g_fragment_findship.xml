@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@color/white94"
@@ -22,10 +23,10 @@
             android:background="#2b5b83">
 
             <TextView
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:gravity="center"
                 android:text="搜索"
                 android:textColor="@color/white"/>
 
@@ -33,81 +34,91 @@
 
     </RelativeLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/swipeRefreshLayout"
+    <co.sspp.goodserapp.weight.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/xlayout_empty_view"
+        app:msv_errorView="@layout/xlayout_error_view"
+        app:msv_loadingView="@layout/xlayout_loading_view"
+        app:msv_viewState="content">
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerView"
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </android.support.v7.widget.RecyclerView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        </android.support.v4.widget.SwipeRefreshLayout>
+                </android.support.v7.widget.RecyclerView>
 
-
-        <RelativeLayout
-            android:id="@+id/botton_bar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="bottom|right"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal"
-            android:paddingTop="1dp">
-
-            <include layout="@layout/layout_line"/>
-
-            <TextView
-                android:id="@+id/tv_count"
-                style="@style/TextView14"
-                android:layout_alignTop="@+id/textView"
-                android:layout_toEndOf="@+id/textView4"
-                android:layout_toRightOf="@+id/textView4"
-                android:text="0"/>
-
-            <TextView
-                android:id="@+id/textView4"
-                style="@style/TextView14"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/tv_count"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text=" 总计："/>
-
-            <TextView
-                android:id="@+id/textView"
-                style="@style/TextView14"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/tv_count"
-                android:layout_toRightOf="@+id/tv_count"
-                android:text=" 条"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
 
 
-            <Button
-                android:id="@+id/btn_pushgoods"
-                android:layout_width="130dp"
-                android:layout_height="54dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginBottom="1dp"
-                android:layout_marginTop="1dp"
-                android:background="@color/dark_orange"
-                android:text="推送货盘"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
+            <RelativeLayout
+                android:id="@+id/botton_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="bottom|right"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
 
-        </RelativeLayout>
+                <include layout="@layout/layout_line"/>
 
-    </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_count"
+                    style="@style/TextView14"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_toEndOf="@+id/textView4"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:text="0"/>
 
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TextView14"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/tv_count"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text=" 总计："/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/TextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_count"
+                    android:layout_toRightOf="@+id/tv_count"
+                    android:text=" 条"/>
+
+
+                <Button
+                    android:id="@+id/btn_pushgoods"
+                    android:layout_width="130dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/dark_orange"
+                    android:text="推送货盘"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </co.sspp.goodserapp.weight.StateView>
 
 </LinearLayout>

@@ -6,9 +6,22 @@ import java.io.Serializable;
  * Created by Jam on 16-8-12
  * Description:
  */
-public class DoFindshipInfo implements Serializable{
+public class DoFindshipInfo implements Serializable {
 
-        private boolean isChecked;
+    private boolean isChecked;
+
+    @Override
+    public String toString() {
+        return "DoFindshipInfo{" +
+                "isChecked=" + isChecked +
+                ", EditDate='" + EditDate + '\'' +
+                ", EmptyPort='" + EmptyPort + '\'' +
+                ", LoadDate='" + LoadDate + '\'' +
+                ", LoadTon='" + LoadTon + '\'' +
+                ", ShipListId=" + ShipListId +
+                ", ShipName='" + ShipName + '\'' +
+                '}';
+    }
 
     public boolean isChecked() {
         return isChecked;
