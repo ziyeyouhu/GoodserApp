@@ -40,22 +40,7 @@
             android:drawableTop="@drawable/g_icon_findship"
             android:text="找船"/>
 
-        <!--<ImageView
-            android:paddingBottom="2dp"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:src="@mipmap/g_push_goods"
-            android:id="@+id/giv_push_goods"
-            android:text="一键发盘"/>-->
 
-        <co.sspp.goodserapp.weight.CrossView
-            android:id="@+id/crossview"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="2dp"
-            android:background="@drawable/shape_orage_aval"
-            android:padding="10dp"
-            app:lineColor="@color/white"/>
 
         <RadioButton
             android:id="@+id/rb_mygoods"

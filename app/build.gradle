@@ -28,12 +28,12 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:24.0.0'
-    compile 'com.android.support:recyclerview-v7:24.0.0'
-    compile 'com.android.support:cardview-v7:24.0.0'
-    compile 'com.android.support:design:24.0.0'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.android.support:support-annotations:24.0.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-annotations:24.2.0'
     compile 'cn.ziyeyouhu.android:sweet-alert-dialog:1.0'
     compile 'cn.bingoogolapple:bga-banner:2.0.8@aar'
     compile 'com.nineoldandroids:library:2.4.0'
@@ -64,8 +64,12 @@ dependencies {
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
     /*pinyin*/
     compile 'me.yokeyword:indexablestickylistview:0.6.7'
-    /*toolbar-panel*/
-    compile 'com.nikoyuwono:toolbar-panel:0.1.1'
+
 
     compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.zhy:base-adapter:3.0.3'
+
+    compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
+
+    compile 'com.github.jaouan:revealator:1.2.0'
 }

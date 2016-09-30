@@ -3,11 +3,12 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/black60"
+              android:background="@color/dark_blue"
               android:fitsSystemWindows="true"
               android:orientation="vertical">
 
     <android.support.v7.widget.SearchView
+
         android:id="@+id/searchview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,17 +19,18 @@
         android:background="@drawable/shape_bg_white_radius"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:textColor="#757575"
+        android:textColor="@color/black85"
         app:iconifiedByDefault="false"
         app:queryBackground="@null"
         app:queryHint="请输入关键字"/>
 
     <me.yokeyword.indexablelistview.IndexableStickyListView
-
+        app:indexBar_textColor="@android:color/darker_gray"
         android:id="@+id/indexListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
+        app:indexListView_rightOverlayColor="@color/dark_green"
         app:indexListView_type_overlay="right"/>
 
 </LinearLayout>

@@ -35,14 +35,7 @@
     </RelativeLayout>
 
 
-    <co.sspp.goodserapp.weight.StateView
-        android:id="@+id/stateView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:msv_emptyView="@layout/xlayout_empty_view"
-        app:msv_errorView="@layout/xlayout_error_view"
-        app:msv_loadingView="@layout/xlayout_loading_view"
-        app:msv_viewState="content">
+
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -119,6 +112,6 @@
             </RelativeLayout>
 
         </FrameLayout>
-    </co.sspp.goodserapp.weight.StateView>
+
 
 </LinearLayout>

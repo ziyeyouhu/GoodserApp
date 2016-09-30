@@ -2,6 +2,7 @@ package co.sspp.goodserapp.rx;
 
 import android.content.Context;
 
+import co.sspp.goodserapp.R;
 import co.sspp.library.SweetAlertDialog;
 import rx.Subscriber;
 
@@ -45,8 +46,11 @@ public abstract class RxSubscribe<T> extends Subscriber<T> {
         if (showDialog()) {
             dialog = new SweetAlertDialog(mContext, SweetAlertDialog.PROGRESS_TYPE)
                     .setTitleText(msg);
-            dialog.setCancelable(true);
-            dialog.setCanceledOnTouchOutside(true);
+
+            dialog.getProgressHelper().setBarColor(mContext.getResources().getColor(R.color.dark_green));
+
+            dialog.setCancelable(false);
+            dialog.setCanceledOnTouchOutside(false);
             //点击取消的时候取消订阅
             dialog.setOnCancelListener(dialog1 -> {
                 if(!isUnsubscribed()){

@@ -16,6 +16,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="正在加载···"
-        android:textColor="@color/black70"
+        android:textColor="@color/black100"
         android:textSize="12sp"/>
 </LinearLayout>

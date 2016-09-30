@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+
+
+    <solid android:color="@color/dark_green" />
+
+    <padding
+        android:left="2dip"
+        android:right="2dip"
+        android:bottom="2dip"
+        android:top="2dip" />
+
+    <corners android:radius="0dp" />
+
+
+</shape>

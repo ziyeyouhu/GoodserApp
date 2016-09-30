@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
-        android:name=".App"
+        android:name=".base.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,19 +21,17 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".home.view.GPushGoodsActivity"/>
-        <activity android:name=".home.FindShipDetails"/>
-        <activity android:name=".home.view.HomeActivity"/>
+        <activity android:name=".module.home.view.GPushGoodsActivity"/>
+        <activity android:name=".module.home.FindShipDetails"/>
+        <activity android:name=".module.home.view.HomeActivity"/>
+        <activity android:name=".module.home.PickPortActivity"/>
+        <activity android:name=".module.login.UI.AppLoginActivity"/>
+        <activity android:name=".module.login.UI.AppRegisterActivity"/>
+        <activity android:name=".module.SelectGoodsActivity"/>
 
-            android:name=".acp.AcpActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/Theme.Transparent"/>
-        <activity android:name=".home.PickPortActivity">
-        </activity>
     </application>
 
 </manifest>

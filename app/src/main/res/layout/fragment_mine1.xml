@@ -2,15 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:background="@color/white"
               android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200px"
-        android:background="@color/dark_blue">
+        android:background="@mipmap/bg_login">
 
         <ImageView
+            android:id="@+id/head"
             android:layout_width="120px"
             android:layout_height="120px"
             android:layout_alignParentLeft="true"
@@ -24,253 +26,11 @@
     <co.sspp.goodserapp.weight.WaveView
         android:id="@+id/waveView"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="60px"
         android:background="@color/dark_blue"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="220px"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_haiyun_order"
-            style="@style/TextView16"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_horizontal"
-            android:paddingTop="42px"
-            android:text="海运订单"
-            android:textSize="28px"/>
-
-        <TextView
-            android:layout_width="2px"
-            android:layout_height="120px"
-            android:layout_gravity="center"
-
-            android:background="@color/white94"/>
-
-        <TextView
-            android:id="@+id/tv_baoxian_order"
-            style="@style/TextView16"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_horizontal"
-            android:paddingTop="42px"
-            android:text="保险订单"
-            android:textSize="28px"/>
 
 
-        <TextView
-            android:layout_width="2px"
-            android:layout_height="120px"
-            android:layout_gravity="center"
 
-            android:background="@color/white94"/>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="220px"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:paddingTop="42px">
-
-            <TextView
-                android:id="@+id/tv_jinrong_order"
-                style="@style/TextView16"
-                android:layout_width="match_parent"
-                android:layout_height="220px"
-                android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-                android:gravity="center_horizontal"
-                android:text="金融订单"
-                android:textSize="28px"/>
-
-
-            <ImageView
-                android:id="@+id/tv_shoud_huank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@mipmap/aa"
-                android:visibility="gone"/>
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="30px"
-        android:background="@color/white94"/>
-
-    <LinearLayout
-        android:id="@+id/rl_my_hyt"
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:layout_marginLeft="@dimen/margin16"
-        android:layout_marginRight="@dimen/margin16"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/textView17"
-            style="@style/TextView14"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="我的航运通"
-            android:textSize="28px"/>
-
-
-        <TextView
-            android:id="@+id/tv_yu_e"
-            style="@style/TextView14"
-            android:drawablePadding="5dp"
-
-            android:text="未登录"
-            android:textColor="@color/dark_orange"
-            android:textSize="28px"/>
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/white94"/>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="180px"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_mine_bangka"
-            style="@style/TextView16"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_horizontal"
-            android:paddingTop="32px"
-            android:text="绑卡"
-            android:textSize="28px"/>
-
-        <TextView
-            android:layout_width="2px"
-            android:layout_height="100px"
-            android:layout_gravity="center"
-            android:background="@color/white94"/>
-
-        <TextView
-            android:id="@+id/mine_cash"
-            style="@style/TextView16"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_horizontal"
-            android:paddingTop="32px"
-            android:text="提现"
-            android:textSize="28px"/>
-
-        <TextView
-            android:layout_width="2px"
-            android:layout_height="100px"
-            android:layout_gravity="center"
-            android:background="@color/white94"/>
-
-        <TextView
-            style="@style/TextView16"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:drawableTop="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_horizontal"
-            android:paddingTop="32px"
-            android:text="转账"
-            android:textSize="28px"/>
-
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="30px"
-        android:background="@color/white94"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="30px"
-        android:paddingRight="30px">
-
-        <TextView
-            style="@style/TextView14"
-            android:layout_width="match_parent"
-            android:layout_height="80px"
-            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_vertical"
-            android:hint="我的收藏"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/white94"/>
-
-        <TextView
-            style="@style/TextView14"
-            android:layout_width="match_parent"
-            android:layout_height="80px"
-            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_vertical"
-            android:hint="我的收藏"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/white94"/>
-
-        <TextView
-            style="@style/TextView14"
-            android:layout_width="match_parent"
-            android:layout_height="80px"
-            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_vertical"
-            android:hint="我的收藏"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/white94"/>
-
-        <TextView
-            style="@style/TextView14"
-            android:layout_width="match_parent"
-            android:layout_height="80px"
-            android:drawableLeft="@mipmap/ic_mine_zhuanzhang"
-            android:gravity="center_vertical"
-            android:hint="我的收藏"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/white94"/>
-
-
-    </LinearLayout>
 
 </LinearLayout>

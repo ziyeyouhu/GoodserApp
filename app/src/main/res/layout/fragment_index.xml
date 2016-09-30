@@ -6,456 +6,156 @@
               android:orientation="vertical">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="88px"
-        android:background="@color/dark_blue"
-        android:gravity="center_vertical">
+        android:background="@color/dark_blue">
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30px"
-            android:text="超级船东"
-            android:textColor="@color/white"
-            android:textSize="32px"/>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingBottom="15px"
-            android:paddingTop="15px">
+            android:layout_centerInParent="true"
+            android:layout_width="690px"
+            android:layout_height="54px"
+            android:background="@mipmap/bg_ss">
 
-            <LinearLayout
+            <TextView
+                android:drawablePadding="10px"
+                android:drawableLeft="@mipmap/ic_fdj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="船舶搜索"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/banner_main"
+                style="@style/BannerDefaultStyle"
+                android:layout_height="240px"
+                app:banner_transitionEffect="alpha"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="34px"
+                    android:background="@mipmap/jian"/>
+
                 <TextView
-                    android:id="@+id/loc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="海口"
-                    android:textColor="@color/white"
-                    android:textSize="24px"/>
+                    style="@style/TextView14"
+                    android:layout_marginLeft="28px"
+                    android:text="今日船期："/>
+
+                <TextView
+                    style="@style/TextView14"
+                    android:text="3935"/>
 
                 <View
-
-                    android:layout_width="10px"
-                    android:layout_height="wrap_content"/>
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
 
                 <TextView
-                    android:id="@+id/tqi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:text="晴"
-                    android:textColor="@color/white"
-                    android:textSize="24px"/>
+                    style="@style/TextView12"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="换一组"
+                    android:textColor="@color/dark_blue"/>
 
+                <ImageView
+                    android:layout_width="24px"
+                    android:layout_height="24px"
+                    android:layout_marginRight="48px"
+                    android:background="@mipmap/gx"/>
 
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:text="19 ~ 31C。"
-                android:textColor="@color/white"
-                android:textSize="24px"/>
+            <View
+                android:layout_width="690px"
+                android:layout_height="2px"
+                android:background="@color/white94"/>
 
 
-        </RelativeLayout>
-
-
-        <FrameLayout
-            android:id="@+id/skyicons"
-            android:layout_width="88px"
-            android:layout_height="88px"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="right">
-
-            <co.sspp.goodserapp.weight.tq.SunView
-                android:id="@+id/sunview"
+            <co.sspp.goodserapp.weight.ListView4ScrollView
+                android:id="@+id/lv_tuijian"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                app:bgColor="@color/dark_blue"
-                app:isStatic="false"
-                app:strokeColor="@color/white"/>
-        </FrameLayout>
-
-    </LinearLayout>
-
-
-    <cn.bingoogolapple.bgabanner.BGABanner
-        android:id="@+id/banner_main"
-        style="@style/BannerDefaultStyle"
-        android:layout_height="280px"
-        app:banner_indicatorGravity="bottom|center_horizontal"
-        app:banner_transitionEffect="alpha"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:orientation="horizontal">
-
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="80px"
-                android:layout_height="80px"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30px"
-                android:layout_marginStart="30px"
-                android:background="@mipmap/ic_index_findship"/>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="50px"
-                android:layout_toEndOf="@+id/imageView"
-                android:layout_toRightOf="@+id/imageView"
-                android:text="3919"
-                android:textColor="@color/bright_blue"
-                android:textSize="48px"/>
+                android:divider="@color/white94"
+                android:dividerHeight="2px"
+                android:paddingLeft="22px"
+                android:paddingRight="22px">
 
 
-            <TextView
-                android:layout_width="wrap_content"
+            </co.sspp.goodserapp.weight.ListView4ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24px"
+                android:background="@color/white94"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68px">
+
+                <ImageView
+                    android:layout_width="240px"
+                    android:layout_height="40px"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24px"
+                    android:background="@mipmap/zxcj"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="690px"
+                android:layout_height="2px"
+                android:background="@color/white94"/>
+
+
+            <co.sspp.goodserapp.weight.ListView4ScrollView
+                android:id="@+id/lv_zuixin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView2"
-                android:layout_alignStart="@+id/textView2"
-                android:layout_below="@+id/textView2"
-                android:layout_marginTop="12px"
-                android:text="找船/条"
-                android:textColor="@color/black60"
-                android:textSize="24px"/>
+                android:divider="@color/white94"
+                android:dividerHeight="2px"
+                android:paddingLeft="22px"
+                android:paddingRight="22px">
 
 
-            <ImageView
+            </co.sspp.goodserapp.weight.ListView4ScrollView>
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </RelativeLayout>
-
-        <View
-            android:layout_width="2px"
-            android:layout_height="match_parent"
-            android:background="@color/white94"/>
+        </LinearLayout>
 
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+    </ScrollView>
 
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="80px"
-                android:layout_height="80px"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30px"
-                android:layout_marginStart="30px"
-                android:background="@mipmap/ic_index_findgoods"/>
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="50px"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
-                android:text="878"
-                android:textColor="@color/bright_blue"
-                android:textSize="48px"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView22"
-                android:layout_alignStart="@+id/textView22"
-                android:layout_below="@+id/textView22"
-                android:layout_marginTop="12px"
-                android:text="找货/条"
-                android:textColor="@color/black60"
-                android:textSize="24px"/>
-
-
-            <ImageView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="30px"
-        android:background="@color/white94"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="76px"
-        android:layout_marginLeft="30px"
-        android:gravity="center_vertical"
-        android:text="运费宝"
-        android:textColor="@color/black85"
-        android:textSize="28px"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:background="@color/white94"/>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="194px"
-        android:paddingLeft="30px"
-        android:paddingRight="30px">
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36px"
-            android:text="24"
-            android:textColor="@color/dark_orange"
-            android:textSize="48px"/>
-
-        <TextView
-            android:id="@+id/textView88"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="54px"
-            android:layout_toEndOf="@+id/textView33"
-            android:layout_toRightOf="@+id/textView33"
-            android:text="小时放款"
-            android:textColor="@color/black70"
-            android:textSize="24px"/>
-
-
-        <TextView
-            android:id="@+id/textView66"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/textView88"
-            android:layout_marginLeft="60px"
-            android:layout_toEndOf="@+id/textView88"
-            android:layout_toRightOf="@+id/textView88"
-            android:text="为您提供短期资金周转"
-            android:textColor="@color/black70"
-            android:textSize="24px"/>
-
-
-        <TextView
-            android:id="@+id/textView55"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView33"
-            android:layout_marginTop="28px"
-            android:text="我来给你垫运费"
-            android:textColor="@color/black60"
-            android:textSize="24px"/>
-
-        <TextView
-            android:id="@+id/textView100"
-            android:layout_width="88px"
-            android:layout_height="40px"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/bg_shape_index"
-            android:gravity="center"
-            android:text="购买"
-            android:textColor="@color/dark_orange"
-            android:textSize="24px"/>
-
-        <TextView
-            android:id="@+id/textView99"
-            android:layout_width="88px"
-            android:layout_height="36px"
-            android:layout_alignBottom="@+id/textView55"
-            android:layout_alignLeft="@+id/textView66"
-            android:layout_alignStart="@+id/textView66"
-            android:background="@drawable/bg_shape_index1"
-            android:gravity="center"
-            android:text="手续简单"
-            android:textColor="@color/dark_orange"
-            android:textSize="20px"/>
-
-
-        <TextView
-            android:id="@+id/textView77"
-            android:layout_width="88px"
-            android:layout_height="36px"
-            android:layout_alignTop="@+id/textView99"
-            android:layout_marginLeft="10px"
-            android:layout_toEndOf="@+id/textView99"
-            android:layout_toRightOf="@+id/textView99"
-            android:background="@drawable/bg_shape_index1"
-            android:gravity="center"
-            android:text="成本低廉"
-            android:textColor="@color/dark_orange"
-            android:textSize="20px"/>
-
-    </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="30px"
-        android:background="@color/white94"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="76px"
-        android:layout_marginLeft="30px"
-        android:gravity="center_vertical"
-        android:text="货物险"
-        android:textColor="@color/black85"
-        android:textSize="28px"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:background="@color/white94"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="194px"
-        android:paddingLeft="30px"
-        android:paddingRight="30px">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36px"
-            android:text="24"
-            android:textColor="@color/dark_orange"
-            android:textSize="48px"/>
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="54px"
-            android:layout_toEndOf="@+id/textView3"
-            android:layout_toRightOf="@+id/textView3"
-            android:text="小时放款"
-            android:textColor="@color/black70"
-            android:textSize="24px"/>
-
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/textView8"
-            android:layout_marginLeft="60px"
-            android:layout_toEndOf="@+id/textView8"
-            android:layout_toRightOf="@+id/textView8"
-            android:text="为您提供短期资金周转"
-            android:textColor="@color/black70"
-            android:textSize="24px"/>
-
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView3"
-            android:layout_marginTop="28px"
-            android:text="我来给你垫运费"
-            android:textColor="@color/black60"
-            android:textSize="24px"/>
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="88px"
-            android:layout_height="40px"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/bg_shape_index"
-            android:gravity="center"
-            android:text="购买"
-            android:textColor="@color/dark_orange"
-            android:textSize="24px"/>
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="88px"
-            android:layout_height="36px"
-            android:layout_alignBottom="@+id/textView5"
-            android:layout_alignLeft="@+id/textView6"
-            android:layout_alignStart="@+id/textView6"
-            android:background="@drawable/bg_shape_index1"
-            android:gravity="center"
-            android:text="手续简单"
-            android:textColor="@color/dark_orange"
-            android:textSize="20px"/>
-
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="88px"
-            android:layout_height="36px"
-            android:layout_alignTop="@+id/textView9"
-            android:layout_marginLeft="10px"
-            android:layout_toEndOf="@+id/textView9"
-            android:layout_toRightOf="@+id/textView9"
-            android:background="@drawable/bg_shape_index1"
-            android:gravity="center"
-            android:text="成本低廉"
-            android:textColor="@color/dark_orange"
-            android:textSize="20px"/>
-
-    </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="30px"
-        android:background="@color/white94"/>
 
 </LinearLayout>

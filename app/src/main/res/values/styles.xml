@@ -50,7 +50,7 @@
         <!-- 指示点左右外间距 -->
         <item name="banner_pointLeftRightMargin">3dp</item>
         <!-- 指示器的位置 -->
-        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <item name="banner_indicatorGravity">bottom|right</item>
         <!-- 页码切换过程的时间长度 -->
         <item name="banner_pageChangeDuration">1000</item>
         <!-- 提示文案的文字大小 -->
@@ -66,32 +66,28 @@
     <!--自定义-->
 
 
-
-
-
-
     <style name="TextView16">
         <item name="android:textColor">@color/black85</item>
-        <item name="android:textColorHint">@color/black70</item>
+        <item name="android:textColorHint">@color/black85</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txtsize_16</item>
+        <item name="android:textSize">32px</item>
     </style>
 
     <style name="TextView14">
         <item name="android:textColor">@color/black85</item>
-        <item name="android:textColorHint">@color/black70</item>
+        <item name="android:textColorHint">@color/black85</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txtsize_14</item>
+        <item name="android:textSize">28px</item>
     </style>
 
     <style name="TextView12">
-        <item name="android:textColor">@color/black70</item>
+        <item name="android:textColor">@color/black85</item>
         <item name="android:textColorHint">@color/black60</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txtsize_12</item>
+        <item name="android:textSize">24px</item>
     </style>
 
 
@@ -163,9 +159,6 @@
         <!--将Activity的Theme设置成透明-->
         <item name="android:windowIsTranslucent">true</item>
     </style>
-
-
-
 
 
     <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">

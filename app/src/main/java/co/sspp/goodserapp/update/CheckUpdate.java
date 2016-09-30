@@ -14,7 +14,7 @@
 //import com.lzy.okhttputils.cache.CacheMode;
 //import com.lzy.okhttputils.callback.StringCallback;
 //
-//import co.sspp.goodserapp.App;
+//import co.sspp.goodserapp.base.App;
 //import co.sspp.goodserapp.update.bean.Apkinfo;
 //import co.sspp.goodserapp.update.bean.Constant;
 //import co.sspp.goodserapp.update.service.DownloadService;

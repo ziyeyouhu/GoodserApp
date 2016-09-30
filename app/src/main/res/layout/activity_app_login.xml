@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".module.login.UI.AppLoginActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="480px"
+        android:layout_height="60px"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="240px"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_left_select"
+            android:button="@null"
+            android:gravity="center"
+            android:text="货主账户登录"
+            android:textColor="@drawable/longin_text_color"
+            android:textSize="28px"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="240px"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_right_select"
+            android:button="@null"
+            android:gravity="center"
+            android:text="手机验证码登录"
+            android:textColor="@drawable/longin_text_color"
+            android:textSize="28px"/>
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:background="@mipmap/ic_head"/>
+
+    </RelativeLayout>
+
+    <!--帐号密码登录-->
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="620px"
+            android:layout_height="88px"
+            android:background="@mipmap/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/ic_person"/>
+
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_marginLeft="20px"
+                android:background="@color/white"/>
+
+
+            <co.sspp.goodserapp.weight.ClearEditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入用户名/已验证手机"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28px"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="620px"
+            android:layout_height="88px"
+            android:layout_marginTop="36px"
+            android:background="@mipmap/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/ic_password"/>
+
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_marginLeft="20px"
+                android:background="@color/white"/>
+
+
+            <co.sspp.goodserapp.weight.PasswordEditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入登录密码"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28px"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--手机号-->
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="620px"
+            android:layout_height="88px"
+            android:background="@mipmap/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/ic_phone"/>
+
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_marginLeft="20px"
+                android:background="@color/white"/>
+
+
+            <co.sspp.goodserapp.weight.ClearEditText
+                android:inputType="number"
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入手机号码"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28px"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="620px"
+            android:layout_height="88px"
+            android:layout_marginTop="36px"
+            android:background="@mipmap/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/ic_code"/>
+
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="40px"
+                android:layout_marginLeft="20px"
+                android:background="@color/white"/>
+
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入验证码"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="28px"/>
+
+
+            <co.sspp.goodserapp.weight.CodeButton
+                android:enabled="false"
+                android:textSize="24px"
+                android:textColor="@drawable/code_text_color"
+                android:background="@null"
+                android:id="@+id/bt_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--dasdsad-->
+    <Button
+        android:text="进入"
+        android:id="@+id/button"
+        android:layout_width="620px"
+        android:layout_height="88px"
+        android:layout_marginTop="36px"/>
+
+
+    <LinearLayout
+        android:layout_width="550px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="立即注册》"
+            android:textColor="@color/white"
+            android:textSize="28px"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/miss_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="忘记密码?"
+            android:textColor="@color/white"
+            android:textSize="28px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="550px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="160px"
+            android:layout_height="2px"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:text="其他方式登录"
+            android:textColor="@color/white"
+            android:textSize="28px"/>
+
+        <View
+            android:layout_width="160px"
+            android:layout_height="2px"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginTop="28px"
+        android:background="@mipmap/qq"/>
+
+</LinearLayout>

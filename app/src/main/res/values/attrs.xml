@@ -36,35 +36,7 @@
         </attr>
     </declare-styleable>
 
-    <declare-styleable name="ProgressPieView">
-        <attr name="android:text"/>
-        <attr name="android:textSize"/>
-        <attr name="android:textColor"/>
-        <attr name="ppvProgress" format="integer"/>
-        <attr name="ppvMax" format="integer"/>
-        <attr name="ppvStartAngle" format="integer"/>
-        <attr name="ppvInverted" format="boolean"/>
-        <attr name="ppvCounterclockwise" format="boolean"/>
-        <attr name="ppvStrokeWidth" format="dimension"/>
-        <attr name="ppvBackgroundColor" format="reference|color"/>
-        <attr name="ppvProgressColor" format="reference|color"/>
-        <attr name="ppvStrokeColor" format="reference|color"/>
-        <attr name="ppvShowStroke" format="boolean"/>
-        <attr name="ppvShowText" format="boolean"/>
-        <attr name="ppvTypeface" format="string"/>
-        <attr name="ppvImage" format="reference"/>
-        <attr name="ppvProgressFillType" format="enum">
-            <enum name="radial" value="0"/>
-            <enum name="center" value="1"/>
-        </attr>
-    </declare-styleable>
 
-
-
-
-    <declare-styleable name="CrossView">
-        <attr name="lineColor" format="color"/>
-    </declare-styleable>
 
     <declare-styleable name="crLayout">
         <!-- 自定义加载更多 res layout id-->
@@ -81,24 +53,17 @@
     </declare-styleable>
 
 
-    <declare-styleable name="SkyIcon">
-        <attr name="isStatic" format="boolean" />
-        <attr name="strokeColor" format="color" />
-        <attr name="bgColor" format="color" />
+
+    <declare-styleable name="StateLayout">
+        <attr name="errorDrawable" format="reference" />
+        <attr name="emptyDrawable" format="reference" />
+        <attr name="progressView" format="reference" />
     </declare-styleable>
 
 
-    <!--xlayout-->
-    <declare-styleable name="MultiStateView">
-        <attr name="msv_loadingView" format="reference"/>
-        <attr name="msv_emptyView" format="reference"/>
-        <attr name="msv_errorView" format="reference"/>
-        <attr name="msv_viewState" format="enum">
-            <enum name="content" value="0"/>
-            <enum name="error" value="1"/>
-            <enum name="empty" value="2"/>
-            <enum name="loading" value="3"/>
-        </attr>
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
     </declare-styleable>
 
 </resources>

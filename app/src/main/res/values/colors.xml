@@ -7,32 +7,21 @@
     <color name="white">#ffffff</color>
     <!-- 白色 -->
 
-    <color name="dark_blue">#3671a3</color>
+    <color name="dark_blue">#3191d8</color>
     <color name="dark_orange">#ff7a5a</color>
     <color name="dark_green">#68de9a</color>
 
-    <color name="bright_blue">#3991dc</color>
 
 
-
-
-
-    <color name="black85">#262626</color>
-    <color name="black70">#5e5e5e</color>
+    <color name="black100">#000000</color>
+    <color name="black85">#303030</color>
     <color name="black60">#919191</color>
 
 
     <color name="white94">#eeeeee</color>
 
 
-
     <color name="transparent">#0000</color>
-
-
-
-
-
-
 
 
 </resources>

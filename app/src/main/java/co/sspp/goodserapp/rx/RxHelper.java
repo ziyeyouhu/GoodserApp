@@ -6,6 +6,7 @@ import android.util.Log;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
@@ -21,18 +22,26 @@ public class RxHelper {
      */
     public static <T> Observable.Transformer<BaseModel<T>, T> handleResult() {
 
-        return tObservable -> tObservable.flatMap(result -> {
+        return new Observable.Transformer<BaseModel<T>, T>() {
+            @Override
+            public Observable<T> call(Observable<BaseModel<T>> tObservable) {
+                return tObservable.flatMap(new Func1<BaseModel<T>, Observable<? extends T>>() {
+                    @Override
+                    public Observable<? extends T> call(BaseModel<T> result) {
 
-            Log.e("RetMsg", "call: " + result.RetMsg);
+                        Log.e("RetMsg", "RetMsg: " + result.RetMsg);
 
-            if (result.success()) {
+                        if (result.success()) {
 
-                return createData(result.RetData);
-            } else {
-                return Observable.error(new ServerException(result.RetMsg));
+                            return createData(result.RetData);
+                        } else {
+                            return Observable.error(new ServerException(result.RetMsg));
+                        }
+                    }
+                }).subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread());
             }
-        }).subscribeOn(Schedulers.io())
-          .observeOn(AndroidSchedulers.mainThread());
+        };
 
     }
 

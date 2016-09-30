@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="请求失败，点击重试"
-        android:textColor="@color/black70"/>
+        android:textColor="@color/black85"/>
 
     <Button
         android:id="@+id/retry"

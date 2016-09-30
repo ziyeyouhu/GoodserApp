@@ -6,7 +6,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.jakewharton.rxbinding.widget.RxTextView;
 
@@ -17,12 +16,8 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import co.sspp.goodserapp.home.domain.DoFindshipInfo;
-import co.sspp.goodserapp.home.view.HomeActivity;
-import co.sspp.goodserapp.rx.Api;
-import co.sspp.goodserapp.rx.RxHelper;
-import co.sspp.goodserapp.rx.RxRetrofitCache;
-import co.sspp.goodserapp.rx.RxSubscribe;
+import co.sspp.goodserapp.base.BaseActivity;
+import co.sspp.goodserapp.module.home.view.HomeActivity;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import rx.Observable;
@@ -54,10 +49,11 @@ public class MainActivity extends BaseActivity {
 //        StatusBarCompat.setStatusBarColor(this, Color.parseColor("#00c2c4"));
 
         ButterKnife.bind(this);
-//        openActivity(HomeActivity.class);
 
 
-        gotoActivity(HomeActivity.class);
+
+        gotoActivity(HomeActivity.class,true);
+
 //        CheckUpdate.getInstance().startCheck(GuideActivity.this);
 
 
@@ -114,24 +110,24 @@ public class MainActivity extends BaseActivity {
                     mQwe.setEnabled(aBoolean);
                 });
 
-
-        Observable<ArrayList<DoFindshipInfo>> compose = Api.getDefault()
-                .findShip(12, 1)
-                .compose(RxHelper.<ArrayList<DoFindshipInfo>>handleResult());
-
-        RxRetrofitCache.load(this, "cacheKey", 1, compose, false)
-                .subscribe(new RxSubscribe<ArrayList<DoFindshipInfo>>(this) {
-
-                    @Override
-                    protected void _onNext(ArrayList<DoFindshipInfo> doFindshipInfos) {
-
-                    }
-
-                    @Override
-                    protected void _onError(String message) {
-                        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                    }
-                });
+//
+//        Observable<ArrayList<DoFindshipInfo>> compose = Api.getDefault()
+//                .findShip(12, 1)
+//                .compose(RxHelper.<ArrayList<DoFindshipInfo>>handleResult());
+//
+//        RxRetrofitCache.load(this, "cacheKey", 1, compose, false)
+//                .subscribe(new RxSubscribe<ArrayList<DoFindshipInfo>>(this) {
+//
+//                    @Override
+//                    protected void _onNext(ArrayList<DoFindshipInfo> doFindshipInfos) {
+//
+//                    }
+//
+//                    @Override
+//                    protected void _onError(String message) {
+//                        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+//                    }
+//                });
 
 
 //        Retrofit retrofit = new Retrofit.Builder()

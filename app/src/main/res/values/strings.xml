@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">GoodserApp</string>
+    <string name="app_name">超级货主</string>
     <string name="nowifi">手机处于非WIFI状态，请注意流量</string>
     <string name="download_success">下载完成</string>
     <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="zcxy"><u>《超级船东用户注册协议》</u></string>
 </resources>

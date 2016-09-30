@@ -15,7 +15,7 @@
 //
 //import cn.bingoogolapple.bgabanner.BGABanner;
 //import cn.bingoogolapple.bgabanner.BGABannerUtil;
-//import co.sspp.goodserapp.home.view.HomeActivity;
+//import co.sspp.goodserapp.module.home.view.HomeActivity;
 //
 //public class GuideActivity extends Activity implements View.OnClickListener {
 //    private static final String TAG = GuideActivity.class.getSimpleName();
